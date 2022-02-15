@@ -1,14 +1,17 @@
 import java.util.*;
 public class Pattern {
-    public static void main (strings [] args) {
+    public static void main (String [] args) {
         Scanner star= new Scanner (System.in);
         System.out.println("Enter the no. of levels of star to be printed");
         int input=star.nextInt();
-        for (i=0; i<input; i++)
+        int i,j;
+        for (i=input; i>=0; i--)
         {
-            for (j=0; j<input; j++)
+            for (j=i; j>=0; j--)
             {
-                System.out.println("*");
+                System.out.print("*");
+            }
+            System.out.println("");
         }
     }
 }
